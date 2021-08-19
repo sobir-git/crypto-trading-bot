@@ -1,0 +1,19 @@
+coin_target: XRP
+coin_refer: USDT
+
+debug: True
+env: development
+
+dataname: ../datas/binance/XRPUSDT-1m.csv
+fromdate: 2021-04-20T08:00:00 Z
+todate: 2021-04-20T16:00:00 Z
+
+model: ../dumps/model.pkl
+
+binance:
+  key:
+  secret:
+
+telegram:
+  channel: "<CHANEL ID>"
+  bot: "<BOT KEY HERE>"

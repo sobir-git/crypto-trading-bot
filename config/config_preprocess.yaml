@@ -1,0 +1,24 @@
+window_size: 120
+training_features: [ppo_13_4, ppo_27_4, ppo_55_4]
+target_future: 4
+mean_price_indc: ma_4
+train_until_date:  2021-04-20T11:00:00 Z
+train_duration: 60 days
+validation_duration: 3 hours
+test_duration: 2 hours
+symbol: XRPUSDT
+step: 5m
+target_column: percent_increase
+
+normalize_data: False
+
+regressor_params: &regression_catboost
+  iterations: 200
+  depth: 6
+  learning_rate: 0.5
+  loss_function: RMSE
+  verbose: True
+  use_best_model: True
+  random_state: 0
+
+model: regression

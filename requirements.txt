@@ -1,0 +1,8 @@
+git+git://github.com/Dave-Vallance/bt-ccxt-store@master#bt-ccxt-store
+backtrader==1.9.76.123
+catboost==0.25.1
+dateparser==1.0.0
+matplotlib
+pandas
+scikit-learn
+seaborn
